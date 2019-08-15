@@ -5,7 +5,7 @@ btn.onclick=function(e){
     e.preventDefault();
     MostrarVista(["vista4", "vista2"], vistas, {
         fade: {
-            enabled: false,
+            enabled: true,
             timeIn: 8,
             timeOut: 10
         },

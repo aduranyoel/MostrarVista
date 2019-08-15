@@ -31,8 +31,15 @@ btn.onclick=function(e){
     MostrarVista(["vista4", "vista2"], vistas);
 }
 
-// Se puede ejecutar un callback al terminar
-MostrarVista(["vista3"], vistas, function(){
-  console.log("Terminado");
-});
+// Con opciones
+MostrarVista(["vista4", "vista2"], vistas, {
+        fade: {
+            enabled: true,
+            timeIn: 8,
+            timeOut: 10
+        },
+        callback: function(){
+            alert("this is the callback");
+        }
+    });
 ```
